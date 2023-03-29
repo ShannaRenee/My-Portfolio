@@ -1,10 +1,18 @@
+:root {
+    --dark: #c75760;
+    --border: #418d71;
+}
+
 * {
-    background-color: rgb(238, 187, 94);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #ffd3b6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h1 {
     text-align: center;
+    font-size: 50px;
+    color: var(--dark);
+    
 }
 
 nav {
@@ -13,7 +21,24 @@ nav {
     font-size: larger;
 }
 nav a {
+    color: var(--dark);
     margin-inline-end: 10px;
+    padding: 3px;
+    border: 2px outset var(--border);
+    text-decoration: none;
+}
+#about-me {
+    color: var(--dark);
+    text-align: center;
+    width: 25%;
+    height: 25%;
+    border: 5px double var(--border);
+    padding: 10px;
+}
+#about-me img {
+    width: 50%;
+    height: 50%;
+    border: 3px solid var(--border);
 }
 
 #work {
@@ -25,13 +50,19 @@ nav a {
 .big-project {
     width: 400px;
     height: 250px;
-    border: solid 5px black;
+    border: solid 5px var(--border);
+    margin: 10px;
+}
+
+.big-project img {
+    width: 100%;
+    height: 100%;
 }
 
 .small-project div {
     width: 300px;
     height: 150px;
-    border: solid 5px black;
+    border: solid 5px var(--border);
     margin: 10px;
     text-align: center;
 }
@@ -48,10 +79,21 @@ nav a {
     justify-content: center;
 }
 
-
+#contact-me {
+    text-align: center;
+    margin: 100px;
+}
 
 #contact-me a {
-    text-align: right;
+    text-align: center;
+    color: var(--dark);
+    border: 2px outset var(--border);
+    padding: 3px;
+    text-decoration: none;
+}
+
+footer {
+    color: var(--dark);
 }
 
 @media screen and (max-width: 500px) {
