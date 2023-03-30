@@ -1,10 +1,10 @@
 :root {
-    --dark: #c75760;
-    --border: #418d71;
+    --dark: #30007e;
+    --border: #6f00ff;
 }
 
 * {
-    background-color: #ffd3b6;
+    background-color: #cbc0ff;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -27,6 +27,10 @@ nav a {
     border: 2px outset var(--border);
     text-decoration: none;
 }
+nav a:hover {
+    border: 2px solid black;
+}
+
 #about-me {
     color: var(--dark);
     text-align: center;
@@ -45,32 +49,49 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: var(--dark);
 }
 
 .big-project {
-    width: 400px;
-    height: 250px;
+    position: relative;
+    text-align: center;
+    width: 500px;
+    height: 400px;
     border: solid 5px var(--border);
     margin: 10px;
 }
 
+.big-project:hover {
+    border: 5px, solid, black;
+}
+.overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 3px ridge var(--border);
+    padding: 3px;
+}
 .big-project img {
     width: 100%;
     height: 100%;
 }
 
-.small-project div {
-    width: 300px;
-    height: 150px;
-    border: solid 5px var(--border);
-    margin: 10px;
-    text-align: center;
+.card {
+    position: relative;
+
 }
 
-.small-project div img {
-    width: 100%;
-    height: 100%;
-    position: relative;
+.card h2 {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    border: 3px solid var(--border);
+    padding: 3px;
+}
+
+.card:hover {
+    border: 5px solid black;
+    cursor: pointer;
 }
 
 .small-project {
@@ -79,7 +100,24 @@ nav a {
     justify-content: center;
 }
 
+.small-project div {
+    width: 300px;
+    height: 150px;
+    border: solid 5px var(--border);
+    margin: 10px;
+    text-align: center;
+    position: relative;
+}
+
+
+.small-project div img {
+    width: 100%;
+    height: 100%;
+    
+}
+
 #contact-me {
+    color: var(--dark);
     text-align: center;
     margin: 100px;
 }
