@@ -5,13 +5,14 @@
 
 * {
     background-color: #cbc0ff;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h1 {
     text-align: center;
     font-size: 50px;
     color: var(--dark);
+    text-shadow: 5px 5px 5px #6f00ff;
     
 }
 
@@ -99,6 +100,7 @@ main {
 .card:hover {
     border: 5px solid black;
     cursor: pointer;
+    box-shadow: 3px 3px 3px #6f00ff;
 }
 
 .small-project {
