@@ -148,8 +148,27 @@ footer {
     color: var(--dark);
 }
 
-@media screen and (max-width: 500px) {
-    .big-project {
-        border: solid 5px red;
+@media screen and (max-width: 1200px) {
+    * {
+        background-color: #ffc0c0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .small-project div {
+        border: solid 5px rgb(255, 77, 107);
+    }
+    .big-project{
+        border: solid 5px rgb(255, 77, 107);
+    }
+    #about-me {
+        border: solid 5px rgb(255, 77, 107);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        color: rgb(255, 77, 107);
+        text-shadow: 5px 5px 5px #292020;
     }
 }
